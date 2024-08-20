@@ -1,0 +1,103 @@
+/* Estilos generales para el cuerpo y HTML */
+body, html {
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el relleno predeterminado */
+    font-family: sans-serif; /* Fuente predeterminada */
+    height: 100%; /* Establece altura completa */
+}
+
+/* Contenedor para el título */
+.title-container {
+    position: absolute; /* Posicionamiento absoluto */
+    top: 50%; /* Coloca el 50% desde arriba */
+    left: 50%; /* Coloca el 50% desde la izquierda */
+    transform: translate(-50%, -50%); /* Centra el contenedor */
+    text-align: center; /* Alinea el texto al centro */
+    z-index: 1; /* Asegura que esté encima de la imagen de fondo */
+}
+
+/* Contenedor principal del menú */
+.menu-container {
+    display: flex; /* Utiliza flexbox para diseño flexible */
+    flex-direction: column; /* Organiza elementos en columna */
+    align-items: center; /* Alinea contenido a la izquierda */
+    justify-content: center; /* Centra verticalmente */
+    height: 100vh; /* Ocupa altura completa del viewport */
+    background-image: url('../images/background.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Ajusta tamaño de la imagen */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita repetición de imagen */
+    padding: 20px; /* Espaciado interior */
+}
+
+/* Título del menú */
+.menu-title {
+    font-size: 35em; /* Tamaño de fuente grande */
+    text-align: center; /* Alinea el texto al centro */
+    color: #555555; /* Color de texto */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Estilos para el menú vertical */
+.vertical-menu {
+    background-color: rgba(236, 235, 235, 0.8); /* Fondo naranja semitransparente */
+    width: 25%; /* Ancho del contenedor */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(59, 58, 58, 1.0); /* Sombra ligera */
+    padding: 20px; /* Espaciado interior */
+}
+
+/* Estilos para la lista dentro del menú */
+.vertical-menu ul {
+    list-style-type: none; /* Elimina viñetas de la lista */
+    padding: 0; /* Elimina relleno de la lista */
+    margin: 0; /* Elimina margen de la lista */
+}
+
+/* Estilos para cada ítem de la lista */
+.vertical-menu ul li {
+    text-align: center; /* Centra texto dentro de cada ítem de la lista */
+}
+
+/* Estilos para los enlaces dentro de cada ítem */
+.vertical-menu ul li a {
+    display: block; /* Hace que los enlaces sean bloques completos */
+    background-color: #ff7f00; /* Color de fondo naranja */
+    padding: 15px 20px; /* Espaciado interno */
+    text-decoration: none; /* Elimina subrayado de los enlaces */
+    color: #161616; /* Color de texto blanco */
+    transition: background-color 0.3s ease; /* Transición suave */
+    border-radius: 20px; /* Bordes ovalados */
+    margin: 10px 0; /* Espaciado entre ítems */
+}
+
+/* Cambio de color de fondo al pasar el ratón por encima */
+.vertical-menu ul li a:hover {
+    background-color: #e7e6e5; /* Color de fondo naranja al pasar el ratón */
+}
+
+/* Estilos adicionales para dispositivos móviles */
+@media (max-width: 768px) {
+    .menu-container {
+        padding: 10px; /* Reducir el relleno en dispositivos móviles */
+    }
+
+    .vertical-menu {
+        width: 80%; /* Ancho ajustado para dispositivos móviles */
+        padding: 15px; /* Reducir el espaciado interior */
+    }
+
+    .vertical-menu ul li a {
+        padding: 10px 15px; /* Reducir el espaciado interno de los enlaces */
+        font-size: 0.9em; /* Ajustar el tamaño de la fuente */
+    }
+
+    .title-container {
+        top: 3%; /* Ajustar la posición del título */
+    }
+
+    .menu-title {
+        font-size: 2em; /* Reducir el tamaño de la fuente del título */
+        margin-bottom: 10px; /* Reducir el espaciado inferior del título */
+    }
+}

@@ -1,0 +1,155 @@
+/* Estilos generales para el cuerpo y el HTML */
+body, html {
+    height: 100%; /* Asegura que cuerpo y HTML ocupen toda la altura de la ventana */
+    margin: 0; /* Elimina margen por defecto */
+    font-family: 'Arial', sans-serif; /* Fuente general */
+    color: black; /* Color del texto */
+}
+
+/* Estilo para el contenedor del título */
+.title-container {
+    position: absolute; /* Posiciona de forma absoluta */
+    top: 50%; /* Coloca el 50% desde arriba */
+    left: 50%; /* Coloca el 50% desde la izquierda */
+    transform: translate(-50%, -50%); /* Centra el contenedor */
+    text-align: center; /* Alinea el texto al centro */
+    z-index: 1; /* Asegura que esté encima de la imagen de fondo */
+}
+
+.title-container h1 {
+    font-size: 3em; /* Tamaño del texto */
+    color: #111111; /* Color del texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto para mejorar visibilidad */
+}
+
+/* Contenedor principal para el formulario de inicio de sesión */
+.login-container {
+    position: relative; /* Posicionamiento relativo para los hijos */
+    background: url('../images/background.jpg') no-repeat center center fixed; /* Imagen de fondo centrada y fija */
+    background-size: cover; /* Cubre todo el fondo */
+    height: 100%; /* Ocupa toda la altura de la ventana */
+    display: flex; /* Flexbox para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+/* Estilo del formulario de inicio de sesión */
+.login-form {
+    position: relative; /* Posición relativa para los hijos */
+    z-index: 2; /* Asegura que esté encima de otros elementos */
+    background-color: rgba(236, 235, 235, 0.8); /* Fondo semitransparente */
+    padding: 20px 30px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(59, 58, 58, 1.0); /* Sombra ligera */
+    text-align: center; /* Alineación del texto */
+    max-width: 300px; /* Ancho máximo */
+    width: 100%; /* Ancho completo */
+    height: auto; /* Ajusta la altura automáticamente */
+    transition: all 0.3s ease-in-out; /* Transición suave para todos los cambios */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+/* Estilo del título del formulario */
+.login-form h1 {
+    margin-bottom: 20px; /* Espacio inferior */
+    font-size: 1.5em; /* Tamaño de fuente */
+    font-family: 'Georgia', serif; /* Fuente específica */
+}
+
+/* Contenedor para los grupos de entrada */
+.input-group {
+    margin-bottom: 15px; /* Espacio inferior */
+    text-align: left; /* Alineación a la izquierda */
+}
+
+/* Estilo para los campos de entrada */
+.input-group input {
+    width: 93%; /* Ancho casi completo */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde delgado y claro */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1em; /* Tamaño de fuente */
+    font-family: 'Georgia', serif; /* Fuente específica */
+}
+
+/* Estilo del botón de inicio de sesión */
+.login-button {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    background-color: #ff7f00; /* Color de fondo */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    color: white; /* Color del texto */
+    font-size: 1em; /* Tamaño de fuente */
+    cursor: pointer; /* Cursor de apuntador */
+    margin-bottom: 10px; /* Espacio inferior */
+    transition: background-color 0.3s ease-in-out; /* Transición suave del color de fondo */
+}
+
+/* Estilo del botón de inicio de sesión al pasar el ratón por encima */
+.login-button:hover {
+    background-color: #e67e22; /* Color de fondo al pasar el ratón */
+}
+
+/* Contenedor para las opciones de enlace */
+.options {
+    display: flex; /* Uso de flexbox */
+    justify-content: space-between; /* Espacio entre los elementos */
+}
+
+/* Estilo de los enlaces dentro de las opciones */
+.options a {
+    color: #3498db; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    transition: text-decoration 0.3s ease-in-out; /* Transición suave del subrayado */
+}
+
+/* Estilo de los enlaces dentro de las opciones al pasar el ratón por encima */
+.options a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+/* Estilo para el icono de configuración */
+.settings {
+    position: absolute; /* Posicionamiento absoluto */
+    bottom: 20px; /* Alineación desde abajo */
+    right: 30px; /* Alineación desde la derecha */
+    z-index: 2; /* Asegura que esté encima de otros elementos */
+}
+
+/* Estilo para la imagen del icono de configuración */
+.settings a img {
+    width: 50px; /* Ancho de la imagen */
+    height: 50px; /* Altura de la imagen */
+}
+
+/* Media Queries para mejorar la visualización en dispositivos móviles */
+@media (max-width: 768px) {
+    .login-form {
+        padding: 15px 20px; /* Ajusta el padding para dispositivos móviles */
+        max-width: 75%; /* Ancho máximo ajustado para evitar desbordamientos */
+        margin-left: auto; /* Centra horizontalmente */
+        margin-right: auto; /* Centra horizontalmente */
+        box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+
+    .login-form h1 {
+        font-size: 1.2em; /* Tamaño ajustado para dispositivos móviles */
+    }
+
+    .login-form input {
+        width: 100%; /* Asegura que los inputs no se salgan del contenedor */
+        box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+    }
+
+    .settings {
+        bottom: 10px; /* Ajusta la posición inferior */
+        right: 10px; /* Ajusta la posición derecha */
+    }
+
+    .settings a img {
+        width: 30px; /* Ancho de la imagen ajustado */
+        height: 30px; /* Altura de la imagen ajustada */
+    }
+}

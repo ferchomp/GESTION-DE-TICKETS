@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Definición del tipo de documento y el lenguaje -->
+<head>
+    <meta charset="UTF-8"> <!-- Especifica la codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la ventana gráfica para dispositivos móviles -->
+    <title>Creación De Tickets</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="css/creacion de tickets.css"> <!-- Enlace a la hoja de estilos CSS -->
+</head>
+<body>
+    <div class="container"> <!-- Contenedor principal -->
+        <div class="form-container"> <!-- Contenedor del formulario -->
+            <h1>Creación De Tickets</h1> <!-- Título del formulario -->
+            <form id="ticketsForm"> <!-- Formulario con un ID específico -->
+                
+                <div class="form-row">
+                    <div class="form-group"> <!-- Grupo de formulario para "Asignado a" -->
+                        <label for="asignado">Asignado a: </label> <!-- Etiqueta para el campo "Asignado a" -->
+                        <select id="asignado" required> <!-- Selector desplegable para "Asignado a" -->
+                            <option value="" disabled selected>Selecciona una opción</option> <!-- Opción por defecto -->
+                            <option>Diego</option> <!-- Opción 1 -->
+                            <option>Luis</option> <!-- Opción 2 -->
+                            <option>Jorge</option> <!-- Opción 3 -->
+                            <option>Carlos</option> <!-- Opción 4 -->
+                            <!-- Agregar más opciones según sea necesario -->
+                        </select>
+                    </div>
+                    
+                    <div class="form-group"> <!-- Grupo de formulario para "Solicitante" -->
+                        <label for="solicitante">Solicitante </label> <!-- Etiqueta para el campo "Solicitante" -->
+                        <select id="solicitante" required> <!-- Selector desplegable para "Solicitante" -->
+                            <option value="" disabled selected>Selecciona una opción</option> <!-- Opción por defecto -->
+                            <option>Pedro</option> <!-- Opción 1 -->
+                            <option>Juan</option> <!-- Opción 2 -->
+                            <option>Felipe</option> <!-- Opción 3 -->
+                            <option>Oscar</option> <!-- Opción 4 -->
+                            <!-- Agregar más opciones según sea necesario -->
+                        </select>
+                    </div>
+                    
+                    <div class="form-group"> <!-- Grupo de formulario para "Departamento del Solicitante" -->
+                        <label for="departamento">Departamento del Solicitante </label> <!-- Etiqueta para el campo "Departamento del Solicitante" -->
+                        <select id="departamento" required> <!-- Selector desplegable para "Departamento del Solicitante" -->
+                            <option value="" disabled selected>Selecciona una opción</option> <!-- Opción por defecto -->
+                            <option>Gerencia</option> <!-- Opción 1 -->
+                            <option>Contabilidad</option> <!-- Opción 2 -->
+                            <option>Recursos Humanos</option> <!-- Opción 3 -->
+                            <option>Administracion</option> <!-- Opción 4 -->
+                            <!-- Agregar más opciones según sea necesario -->
+                        </select>
+                    </div>
+                    
+                    <div class="form-group"> <!-- Grupo de formulario para "Fecha de Creación" -->
+                        <label for="fechaCreacion">Fecha de Creación </label> <!-- Etiqueta para el campo "Fecha de Creación" -->
+                        <input type="date" id="fechaCreacion" required> <!-- Campo de entrada de fecha para "Fecha de Creación" -->
+                    </div>
+                                    
+                    <div class="form-row">
+                        <div class="form-group"> <!-- Grupo de formulario para "Asunto" -->
+                        <label for="asunto">Asunto</label> <!-- Etiqueta para el campo "Asunto" -->
+                        <input type="text" id="asunto"> <!-- Campo de entrada de texto para "Asunto" -->
+                    </div>
+                    
+                    
+                    <div class="form-row"> <!-- Fila del formulario para "Descripción" -->
+                        <div class="form-group"> <!-- Grupo de formulario para "Descripción" -->
+                        <label for="descripcion">Descripción </label> <!-- Etiqueta para el campo "Descripción" -->
+                        <textarea id="descripcion" required></textarea> <!-- Área de texto para "Descripción" -->
+                    </div>
+                   
+                    
+                    <div class="form-row"> 
+                        <div class="form-group"> <!-- Grupo de formulario para "Tipo de Ticket" -->
+                        <label for="tipoTicket">Tipo de Ticket </label> <!-- Etiqueta para el campo "Tipo de Ticket" -->
+                        <select id="tipoTicket" required> <!-- Selector desplegable para "Tipo de Ticket" -->
+                            <option value="" disabled selected>Selecciona una opción</option> <!-- Opción por defecto -->
+                            <option>Incidente</option> <!-- Opción 1 -->
+                            <option>Problema</option> <!-- Opción 2 -->
+                            <option>Solicitud de servicio</option> <!-- Opción 3 -->
+                            <option>Consulta</option> <!-- Opción 4 -->
+                            <!-- Agregar más opciones según sea necesario -->
+                        </select>
+
+                    </div>
+                   
+                    <div class="form-group"> <!-- Grupo de formulario para "Estado del Ticket" -->
+                        <label for="estadoTicket">Estado del Ticket</label> <!-- Etiqueta para el campo "Estado del Ticket" -->
+                        <select id="estadoTicket"> <!-- Selector desplegable para "Estado del Ticket" -->
+                            <option value="" disabled selected>Selecciona una opción</option> <!-- Opción por defecto -->
+                            <option>Abierto</option> <!-- Opción 1 -->
+                            <option>Cerrado</option> <!-- Opción 2 -->
+                            <option>Proceso</option> <!-- Opción 3 -->
+                            <!-- Agregar más opciones según sea necesario -->
+                        </select>
+                    </div>
+                    
+                    <div class="form-group"> <!-- Grupo de formulario para "Prioridad" -->
+                        <label for="prioridad">Prioridad </label> <!-- Etiqueta para el campo "Prioridad" -->
+                        <select id="prioridad" required> <!-- Selector desplegable para "Prioridad" -->
+                            <option value="" disabled selected>Selecciona una opción</option> <!-- Opción por defecto -->
+                            <option>Urgente</option> <!-- Opción 1 -->
+                            <option>Alta</option> <!-- Opción 2 -->
+                            <option>Media</option> <!-- Opción 3 -->
+                            <option>Baja</option> <!-- Opción 4 -->
+                            <!-- Agregar más opciones según sea necesario -->
+                        </select>
+                    </div>
+                    
+                    <div class="form-group"> <!-- Grupo de formulario para "Fecha de Resolución" -->
+                        <label for="fechaResolucion">Fecha de Resolución </label> <!-- Etiqueta para el campo "Fecha de Resolución" -->
+                        <input type="date" id="fechaResolucion" required> <!-- Campo de entrada de fecha para "Fecha de Resolución" -->
+                    </div>
+                
+                </div>
+                <!-- Fila del formulario para adjuntar archivo -->
+                    <div class="form-actions"> <!-- Fila de acciones del formulario -->
+                    <div class="form-group"> <!-- Grupo de formulario para "Adjuntar Archivo" -->
+                        <label for="adjunto">Adjuntar Archivo</label> <!-- Etiqueta para el campo "Adjuntar Archivo" -->
+                        <input type="file" id="adjunto"> <!-- Campo de entrada de archivo para "Adjuntar Archivo" -->
+                        <button type="submit" class="submit-button">Crear Ticket</button> <!-- Botón para enviar el formulario -->
+                        <button type="button" class="back-button">Volver al menú</button> <!-- Botón para volver al menú -->
+                        
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/creacion de tickets.js"></script> <!-- Enlace al archivo JavaScript -->
+</body>
+</html>

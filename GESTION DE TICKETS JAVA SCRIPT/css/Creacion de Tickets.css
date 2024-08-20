@@ -1,0 +1,143 @@
+/* Estilos generales para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px; /* Asegura un poco de espacio alrededor del contenido */
+    background-image: url("../images/background.jpg"); /* Ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #1b1b1d;
+    display: flex;
+    flex-direction: column; /* Permitir dirección de columna */
+    justify-content: flex-start; /* Empieza desde arriba */
+    align-items: center; /* Centra horizontalmente */
+    min-height: 100vh; /* Asegura que ocupa toda la altura de la ventana */
+}
+
+/* Estilos para el contenedor del título */
+.title-container {
+    text-align: center; /* Alineación central del texto */
+    margin-bottom: 20px; /* Espacio inferior */
+    background-color: rgba(236, 235, 235, 0.8); /* Fondo semitransparente */
+    padding: 10px; /* Relleno interno */
+    border-radius: 15px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(59, 58, 58, 1.0); /* Sombra ligera */
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    width: 30%; /* Ancho del contenedor */
+    padding: 20px;
+    background-color: rgba(236, 235, 235, 0.8); /* Fondo semitransparente */
+    border-radius: 15px; /* Borde redondeado */
+    text-align: center; /* Alineación central del texto */
+    box-shadow: 0 0 10px rgba(59, 58, 58, 1.0); /* Sombra ligera */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Estilos para el formulario dentro del contenedor */
+.form-container {
+    max-width: 1000px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+
+/* Estilos para las filas del formulario */
+.form-row {
+    display: flex; /* Mostrar elementos en línea */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+    justify-content: space-between; /* Espacio entre los elementos */
+    margin-bottom: 2px; /* Espacio entre filas */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+/* Estilos para las etiquetas del formulario */
+.form-group {
+    flex: 1 1 calc(50% - 10px); /* Ajustar tamaño flexible */
+    margin-right: 10px; /* Espacio derecho */
+    margin-bottom: 5px; /* Espacio inferior */
+}
+
+.form-group label {
+    font-weight: bold; /* Texto en negrita */
+    display: block; /* Mostrar como bloque para mejor visualización */
+    margin-bottom: 2px; /* Espacio inferior */
+}
+
+/* Estilos para los selectores y entradas de texto del formulario */
+.form-group select,
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group textarea {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Relleno interno */
+    box-sizing: border-box; /* Incluir el borde en el ancho total */
+    border: 1px solid #4e4d4d; /* Borde delgado */
+    border-radius: 8px; /* Borde redondeado */
+    margin-top: 10px; /* Espacio superior */
+}
+
+/* Estilos para el botón de volver al menú */
+.back-button {
+    padding: 10px 20px; /* Relleno interno */
+    background-color: #ff7f00; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Borde redondeado */
+    cursor: pointer; /* Cursor apuntador */
+    margin-right: 50px; /* Margen derecho */
+}
+
+/* Estilos para el botón crear Ticket */
+.submit-button {
+    padding: 10px 20px; /* Relleno interno */
+    background-color: #28a745; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Borde redondeado */
+    cursor: pointer; /* Cursor apuntador */
+}
+
+/* Estilos para el botón de adjuntar archivo */
+.form-group input[type="file"] {
+    margin-top: 10px; /* Espacio superior */
+}
+
+/* Estilos para el pie de página del formulario */
+.form-actions {
+    margin-top: 5px; /* Espacio superior */
+}
+
+/* Estilos adicionales para dispositivos móviles */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Reducir el padding en dispositivos móviles */
+    }
+
+    .title-container {
+        width: 90%; /* Ancho ajustado para dispositivos móviles */
+        margin-bottom: 15px; /* Reducir el espaciado inferior */
+    }
+
+    .container {
+        width: 90%; /* Ancho ajustado para dispositivos móviles */
+        padding: 15px; /* Reducir el padding */
+        margin-bottom: 15px; /* Reducir el espaciado inferior */
+    }
+
+    .vertical-menu {
+        width: 80%; /* Ancho ajustado para dispositivos móviles */
+        padding: 15px; /* Reducir el espaciado interior */
+    }
+
+    .form-group {
+        flex: 1 1 100%; /* Ancho completo en dispositivos móviles */
+        margin-right: 0; /* Eliminar margen derecho en dispositivos móviles */
+    }
+
+    .back-button,
+    .submit-button {
+        width: 100%; /* Ancho completo */
+        margin: 10px 0; /* Espacio superior e inferior */
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres a UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la escala inicial y el ancho del viewport para dispositivos móviles -->
+    <title>Gestión De Tickets - Login</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Enlace al archivo CSS para los estilos -->
+</head>
+<body>
+    <div class="login-container"> <!-- Contenedor principal del formulario de inicio de sesión -->
+        <div class="login-form"> <!-- Formulario de inicio de sesión -->
+            <h1>Gestión De Tickets</h1> <!-- Título del formulario -->
+            <form id="loginForm" action="login" method="post" onsubmit="return validateLogin();">
+                <!-- Formulario con método POST, llama a la función JavaScript validateLogin() al enviar -->
+
+                <div class="input-group"> <!-- Grupo de entrada para el nombre de usuario -->
+                    <label for="username">Usuario</label> <!-- Etiqueta del campo de usuario -->
+                    <input type="text" id="username" name="username" placeholder="Ingrese Usuario" required aria-label="Nombre de Usuario">
+                    <!-- Campo de texto para el nombre de usuario, requerido y con un texto de marcador de posición -->
+                </div>
+
+                <div class="input-group"> <!-- Grupo de entrada para la contraseña -->
+                    <label for="password">Contraseña</label> <!-- Etiqueta del campo de contraseña -->
+                    <input type="password" id="password" name="password" placeholder="Ingrese Contraseña" required aria-label="Contraseña">
+                    <!-- Campo de texto para la contraseña, tipo contraseña, requerido y con un texto de marcador de posición -->
+                </div>
+
+                <button type="submit" class="login-button">Iniciar Sesión</button> <!-- Botón para enviar el formulario -->
+
+                <div class="options"> <!-- Contenedor para opciones adicionales -->
+                    <a href="#" class="forgot-password">Olvidé mi contraseña</a> <!-- Enlace para recuperar la contraseña -->
+                    <a href="#" class="create-account">Crear Cuenta</a> <!-- Enlace para crear una nueva cuenta -->
+                </div>
+            </form>
+        </div>
+
+        <div class="settings"> <!-- Contenedor para la configuración adicional -->
+            <a href="pages/configuracion.html"><img src="images/settings-icon.png" alt="Configuración"></a>
+            <!-- Enlace a la página de configuración con un icono de configuración -->
+        </div>
+    </div>
+
+    <script src="js/script.js"></script> <!-- Inclusión del archivo JavaScript para el formulario -->
+</body>
+</html>
+     
