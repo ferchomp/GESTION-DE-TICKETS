@@ -1,0 +1,65 @@
+body {
+    background-image: url('../images/background-fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center; /* Centra el texto en el body */
+}
+
+/* Estilos para el título de bienvenida */
+.title-welcome {
+    color: #000; /* Color negro */
+    font-size: 3em; /* Tamaño grande */
+    margin-top: 20px;
+    display: inline-block; /* Asegura que el texto se centre */
+}
+
+/* Estilos para el subtítulo */
+.subtitle {
+    color: #000; /* Color negro */
+    font-size: 2em; /* Tamaño grande */
+    margin-bottom: 20px;
+    display: inline-block; /* Asegura que el texto se centre */
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.vertical-menu {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px; /* Ajusta el ancho */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para resaltar el menú */
+}
+
+.vertical-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.vertical-menu li {
+    margin: 10px 0;
+}
+
+.button {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: orange;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    width: 100%; /* Asegura que los botones ocupen el ancho completo del menú */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+
+.button:hover {
+    background-color: darkorange;
+}

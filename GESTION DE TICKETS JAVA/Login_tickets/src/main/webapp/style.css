@@ -1,0 +1,105 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+     font-family: 'Arial', sans-serif; /* Fuente general */
+    background: url('../images/fondo.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.login-container, .register-container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 100%;
+    max-width: 350px; /* Ancho más angosto */
+    height: 500px;
+    padding: 30px 25px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.login-container h1, .register-container h1 {
+    margin-bottom: 10 px;
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 14px;
+    font-weight: bold; /* Aplica negrilla a todas las etiquetas */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Estilo para los campos de entrada */
+.input-group input {
+    width: 100%; /* Ancho casi completo */
+    padding: 8px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde delgado y claro */
+    border-radius: 3px; /* Bordes redondeados */
+    font-size: 1em; /* Tamaño de fuente */
+    font-family: 'Georgia', serif; /* Fuente específica */
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff8800;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-group button:hover {
+    background-color: #e67700;
+}
+
+.signup-link, .login-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.signup-link a, .login-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link a:hover, .login-link a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Gestion de Tickets</h1>
+        <form action="login" method="post">
+            <div class="form-group">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Ingrese su usuario" required>
+            </div>
+            <div class="form-group">
+                <label for="contraseña">Contraseña</label>
+                <input type="password" id="contraseña" name="contraseña" placeholder="Ingrese su contraseña" required>
+                <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+            </div>
+            <div class="form-group">
+                <button type="submit">Iniciar Sesion</button>
+            </div>
+        </form>
+        <div class="signup-link">
+            ¿No tienes cuenta? <a href="signup.html">Regístrate aquí</a>
+        </div>
+    </div>
+</body>
+</html>
